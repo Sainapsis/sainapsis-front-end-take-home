@@ -1,0 +1,25 @@
+fragment Message on Message {
+  content
+  createdAt
+  id
+  readAt
+  sentBy
+}
+
+query getMessages {
+  getMessages {
+    ...Message
+  }
+}
+
+mutation markMessageAsRead($id: ID!) {
+  markMessageAsRead(id: $id) {
+    ...Message
+  }
+}
+
+mutation sendMessage($content: String!, $sentBy: SentBy!) {
+  sendMessage(content: $content, sentBy: $sentBy) {
+    ...Message
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "name": "api",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/api/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/esbuild:esbuild",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "main": "apps/api/src/main.ts",
+        "outputPath": "dist/apps/api",
+        "outputFileName": "main.js",
+        "tsConfig": "apps/api/tsconfig.app.json",
+        "additionalEntryPoints": [],
+        "bundle": true,
+        "format": ["cjs"],
+        "watch": false,
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "apps/api/src/assets",
+            "output": "dist/apps/api/assets",
+            "ignore": []
+          }
+        ],
+        "deleteOutputPath": true,
+        "external": ["depd"],
+        "outputHashing": "none",
+        "metafile": false,
+        "sourcemap": "linked",
+        "minify": false,
+        "platform": "node",
+        "target": "esnext",
+        "skipTypeCheck": false,
+        "generatePackageJson": true,
+        "thirdParty": true,
+        "esbuildOptions": {}
+      },
+      "configurations": {
+        "development": {
+          "sourcemap": "linked"
+        },
+        "production": {
+          "sourcemap": false,
+          "minify": true
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "api:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "api:build:development"
+        },
+        "production": {
+          "buildTarget": "api:build:production"
+        }
+      }
+    }
+  }
+}
