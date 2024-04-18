@@ -7,6 +7,10 @@
     "web:dev": "nx serve web-chat",
     "api:dev": "nx serve api"
   },
+  "engines": {
+    "node": ">=20.0.0",
+    "yarn": ">=4.1.1"
+  },
   "private": true,
   "dependencies": {
     "@apollo/server": "^4.10.3",
