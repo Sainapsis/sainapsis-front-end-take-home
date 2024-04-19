@@ -87,6 +87,10 @@ This take-home assignment is designed to assess your skills and familiarity with
 
 Remember, the purpose of this assignment is to assess your skills and thought process. If you encounter any issues or have questions, don't hesitate to reach out. Good luck and have fun!
 
+### Time Expectation
+
+We understand that everyone works at a different pace, but we estimate that completing the entire assignment should take no more than 3 hours. If you find yourself spending significantly more time than this, it might indicate that the assignment is challenging given your current level of experience. However, we still encourage you to submit your work, as it provides valuable insights into your problem-solving approach and thought process.
+
 ### Code Quality
 
 We place a strong emphasis on code quality and maintainability. When working on the assignment, please keep the following in mind:
