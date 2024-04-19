@@ -7,6 +7,7 @@ import { getMessagesQueryKey, type UseMessagesQueryResult } from "@take-home/api
 import { produce } from "immer";
 import { useSession } from "@take-home/stores";
 
+// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 export function useSendMessageMutation() {
   return useMutation({
     async mutationFn(message: string) {

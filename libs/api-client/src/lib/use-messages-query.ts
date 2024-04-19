@@ -14,7 +14,7 @@ export function useMessagesQuery() {
   return useQuery({
     queryKey: getMessagesQueryKey(),
     async queryFn() {
-      const data = await client.request(GetMessagesDocument);
+      const data = await client.request(GetMessagesDocument, undefined);
       return data.getMessages;
     },
     refetchOnWindowFocus: true,

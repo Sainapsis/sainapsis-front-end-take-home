@@ -2,11 +2,10 @@ import { cn } from "@take-home/utils";
 import React from "react";
 
 type Props = {
-  children: React.ReactNode;
   active: boolean;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
-export const AsButton: React.FC<Props> = ({ children, active, className, ...props }) => {
+export const AsButton: React.FC<Props> = ({ active, className, ...props }) => {
   return (
     <button
       type="button"
@@ -16,8 +15,6 @@ export const AsButton: React.FC<Props> = ({ children, active, className, ...prop
         className,
       )}
       {...props}
-    >
-      {children}
-    </button>
+   />
   );
 };

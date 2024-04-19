@@ -49,6 +49,7 @@ async function startServer(): Promise<void> {
     listen: { port: 3000 },
   });
 
+  // eslint-disable-next-line no-console
   console.log(`🚀 Server ready at ${url}`);
 }
 
