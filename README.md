@@ -105,6 +105,7 @@ By focusing on code quality, we can ensure that the codebase remains maintainabl
 Once you've completed the assignment, please follow these steps to submit your work:
 
 1. Upload your code to a private repository on GitHub and add the following users as collaborators: `lucas.patron@sainapsis.com`, `santiago.velez@sainapsis.com`, and `derwin.romero@sainapsis.com`.
-2. Notify us via email that you have submitted your assignment, and we will review your submission.
+2. Ensure that your commit history is visible in the repository. We place great importance on the commit history as it provides insights into your development process and problem-solving approach. While not required, we encourage the use of conventional commits with prefixes like chore, feat, etc., to enhance the clarity of your commit messages.
+3. Notify us via email that you have submitted your assignment, and we will review your submission.
 
 We appreciate your time and effort in completing this assignment. We look forward to reviewing your submission!
