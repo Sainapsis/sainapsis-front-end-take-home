@@ -55,9 +55,8 @@ yarn run api:dev
 2. Start the `web-chat` application:
 
 ```bash
-yarn run web-chat:start
+yarn run web:dev
 ```
-
 
 ## Code Generation
 
@@ -89,7 +88,7 @@ Remember, the purpose of this assignment is to assess your skills and thought pr
 
 ### Time Expectation
 
-We understand that everyone works at a different pace, but we estimate that completing the entire assignment should take no more than 3 hours. If you find yourself spending significantly more time than this, it might indicate that the assignment is challenging given your current level of experience. However, we still encourage you to submit your work, as it provides valuable insights into your problem-solving approach and thought process.
+We understand that everyone works at a different pace, but we estimate that completing the entire assignment should take no more than 3 hours. 4 hours is a stretch. If you find yourself spending significantly more time than this, it might indicate that the assignment is challenging given your current level of experience. However, we still encourage you to submit your work, as it provides valuable insights into your problem-solving approach and thought process.
 
 ### Code Quality
 
@@ -105,8 +104,7 @@ By focusing on code quality, we can ensure that the codebase remains maintainabl
 
 Once you've completed the assignment, please follow these steps to submit your work:
 
-1. Upload your code to a private repository on GitHub and add the following users as collaborators: `@user1` and `@user2`.
+1. Upload your code to a private repository on GitHub and add the following users as collaborators: `lucas.patron@sainapsis.com`, `santiago.velez@sainapsis.com`, and `derwin.romero@sainapsis.com`.
 2. Notify us via email that you have submitted your assignment, and we will review your submission.
 
 We appreciate your time and effort in completing this assignment. We look forward to reviewing your submission!
-
