@@ -5,6 +5,10 @@ type Props = {
   active: boolean;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
+function someFunction() {
+  return "hello";
+}
+
 export const AsButton: React.FC<Props> = ({ active, className, ...props }) => {
   return (
     <button
@@ -15,6 +19,6 @@ export const AsButton: React.FC<Props> = ({ active, className, ...props }) => {
         className,
       )}
       {...props}
-   />
+    />
   );
 };
