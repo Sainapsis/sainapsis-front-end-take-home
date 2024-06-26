@@ -80,9 +80,18 @@ This take-home assignment is designed to assess your skills and familiarity with
 
 2. **Medium Problem**: Currently, when sending a message, the message list is not being scrolled into view. The desired behavior is that when a new message is sent, regardless of success or error, the chat should scroll to the bottom for a better user experience. Implement this functionality.
 
-3. **Hard Problem**: The message states are not being marked as read when in view. The goal is to mark a message as read whenever it is in view and send a mutation to the API to update its status. Consider optimizing the number of requests sent to the API.
+3. **Hard Problem**: The message states are not being marked as read when in view. The goal is to mark a message as read whenever it is in view and send a mutation to the API to update its status. Implement batching to optimize the amount of requests sent to the server.
 
-4. **Very Hard Problem**: The backend does not currently support WebSocket communication. Your task is to implement WebSocket support on the frontend to communicate with the server. When a message is sent or marked as read, other clients should see the update in real-time. You'll need to update the cache in `@tanstack/react-query` accordingly and integrate WebSockets with the Apollo server.
+4. **Very Hard Problem**: Implement a "Reply to Message" functionality. This feature should work as follows:
+   - Frontend:
+     - When hovering over a message bubble (sent by either the user or the recipient), display a button to reply to the message.
+     - Upon clicking the reply button, show the message being replied to above the chat input (similar to WhatsApp's interface).
+   - Backend:
+     - Modify the mutation to send a message to accept an optional ID of the message being replied to.
+     - Implement a nested attribute for messages called `repliedToMessage` that contains the full details of the message being replied to.
+     - Update the query to include this new `repliedToMessage` attribute, ensuring that when fetching messages, the full details of any replied-to messages are also retrieved.
+
+This task involves both frontend and backend changes, requiring updates to the UI, state management, API calls, and database schema.
 
 Remember, the purpose of this assignment is to assess your skills and thought process. If you encounter any issues or have questions, don't hesitate to reach out. Good luck and have fun!
 
