@@ -1,4 +1,4 @@
-# Sainapsis Front-end Take-home Assignment
+# Sainapsis Front-end and/or QA Take-home Assignment
 
 ## Pre-requisites
 
@@ -72,7 +72,10 @@ To generate the code, run the following command at the root of the repository:
 yarn run graphql:codegen
 ```
 
-## Assignment
+
+## Front-end Assignments
+
+The following assigments are intended for Front-end, if you are instead applying only for the QA role, you can jump to the next section (QA Assignments).
 
 This take-home assignment is designed to assess your skills and familiarity with the technologies used in this project. The assignment consists of four parts, each with varying levels of difficulty. Don't worry if you can't complete all of them; they are designed to cater to a wide range of seniority and experience levels. Feel free to submit your work even if you only complete a few of the tasks.
 
@@ -97,7 +100,7 @@ Remember, the purpose of this assignment is to assess your skills and thought pr
 
 ### Time Expectation
 
-We understand that everyone works at a different pace, but we estimate that completing the entire assignment should take no more than 3 hours. 4 hours is a stretch. If you find yourself spending significantly more time than this, it might indicate that the assignment is challenging given your current level of experience. However, we still encourage you to submit your work, as it provides valuable insights into your problem-solving approach and thought process.
+We understand that everyone works at a different pace, but we estimate that completing the entire assignment should take no more than 3 to 4 hours if you are familiriazed with the tech stack, a little more may be needed for learning the tech stack if its not familiar, but if you find yourself spending significantly more time than this, we still encourage you to reach out to your contact with our HR team to comment on your situation and/or submit your unfinished work if you feel its worth a try.
 
 ### Code Quality
 
@@ -108,6 +111,26 @@ We place a strong emphasis on code quality and maintainability. When working on 
 - **Naming Conventions**: Use clear and descriptive naming conventions for variables, functions, and components. Don't hesitate to use verbose names if they improve code comprehension.
 
 By focusing on code quality, we can ensure that the codebase remains maintainable and easy to understand for all developers working on the project.
+
+## QA Assigments
+
+The following assigments are intended for QA, if you are instead applying only for the Front End role, you can jump to the nex section (Submission).
+
+This QA assigments are intended to test:
+A. your criteria identifying potential enhancemnts/bugs by manually testing an app running in your local machine (for maually checking PRs before a merge to higher level enviroments)
+B. your automated test coding skills. 
+
+The Assigments are:
+
+1. **Easy Problem**: run the app in your local machine and identify enhancemts and bugs that are not mentioned in the Front-end test section. Make a QA_MANUAL_TEST_RESUME.txt with the findings (with steps to reproduce, proposed expected behaviour bases on your good judjement and actual behaviour).
+
+2. **Medium problem**: create automated tests that would be needed to test the bugs mentioned in the Front-end Assigments section and if possible the other bugs and feature enhacemnts you may have encountered in the previous assigment.
+
+3. **Hard Problem**: create automated test for a test driven implementation of the "Reply to Message" functionality mentioned in the Front-end assigmnent.
+
+4. **Leadership Problem**: Make a propousal for how would you handle the QA team, what would you seek in your team mates, how would you make sure that the QA team is delivering standar quality checks in all their deliveries, etc. You may describe it a resume and/or make a diagram for processes, its up to you.
+
+
 
 ## Submission
 
